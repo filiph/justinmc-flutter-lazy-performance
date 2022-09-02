@@ -47,6 +47,7 @@ class _ProceduralGenerationPageState extends State<ProceduralGenerationPage> {
   @override
   void dispose() {
     _transformationController.removeListener(_onChangeTransformation);
+    _transformationController.dispose();
     super.dispose();
   }
 
